@@ -1,0 +1,51 @@
+# Ignorar configuración de entorno
+.env
+.env.local
+.env.*.local
+
+# Ignorar archivos de lock
+package-lock.json
+yarn.lock
+
+# Ignorar dependencias
+back/node_modules/
+front/node_modules/
+
+# Ignorar compilados de producción
+back/dist/
+front/dist/
+front/build/
+
+# Ignorar logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignorar archivos temporales del sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de pruebas locales
+.vscode/
+.idea/
+*.swp
+
+# Ignorar coverage y reportes de pruebas
+coverage/
+back/coverage/
+front/coverage/
+
+# Ignorar caché
+.backup/
+.cache/
+.backup.json
+.next/
+out/
+
+
+
+imagenes de maqueta/
+
+usinacreativa.pem
+back-up.txt

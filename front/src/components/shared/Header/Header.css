@@ -1,0 +1,45 @@
+/* Header Navbar fijo */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: var(--color-primary);
+}
+
+.dropdown-menu {
+    background-color: var(--color-primary) !important;
+    overflow: hidden;
+}
+
+.dropdown-menu li a:hover {
+    background-color: var(--color-terciario);
+}
+
+.dropdown-menu li Link{
+    color: var(--color-secondary);
+
+}
+
+.nav-item a {
+    color: var(--color-background);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-item a:hover {
+    transform: scale(1.05);
+    color: #fff;
+}
+.Mobile{
+    display: none;
+}
+
+@media (max-width:768px) {
+    .PC{
+        display: none;
+    }
+
+    .Mobile{
+        display: block;
+        
+    }
+}

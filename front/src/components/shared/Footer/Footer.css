@@ -1,0 +1,27 @@
+/* Footer General */
+footer {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 1rem;
+}
+
+/* Iconos redes sociales */
+.redesSo i {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out !important;
+}
+
+.redesSo i:hover {
+    transform: scale(1.15) !important;
+}
+
+.bajadaInfoFooter{
+    max-width: 400px;
+}
+
+@media (max-width:768px) {
+    .mobileS{
+        height:35px !important ;
+    }
+    
+}

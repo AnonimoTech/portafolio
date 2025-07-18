@@ -1,0 +1,12 @@
+.portada {
+  height: auto;
+  min-height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.portada-overlay {
+  background: rgba(0, 0, 0, 0.342);
+}

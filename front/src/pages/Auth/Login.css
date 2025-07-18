@@ -1,0 +1,23 @@
+.contenedorLogin {
+    max-width: 50% !important;
+}
+
+.contenedorLogin h2 {
+    color: var(--color-text-light);
+}
+
+@media (max-width:768px) {
+    .contenedorLogin {
+        max-width: 70% !important;
+       
+    }
+
+}
+
+@media (max-width:490px) {
+    .contenedorLogin {
+        max-width: 100% !important;
+       
+    }
+
+}

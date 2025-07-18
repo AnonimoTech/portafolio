@@ -1,0 +1,142 @@
+Estructura de carpetas y archivos
+css
+Copiar
+Editar
+src/
+├── assets/
+├── components/
+│   ├── admin/
+│   ├── auth/
+│   ├── client/
+│   └── shared/
+├── hooks/
+├── pages/
+├── router.jsx
+├── App.jsx
+└── main.jsx
+📁 assets/
+Imágenes, íconos, fuentes, etc.
+
+Archivos estáticos que no son componentes.
+
+Ej:
+assets/logoUsina.svg, assets/favicon.ico
+
+📁 components/
+Componentes reutilizables agrupados por funcionalidad.
+
+📂 admin/
+Componentes que ve solo el admin.
+
+Ej: AdminSidebar.jsx, VistaClientesForm.jsx, NovedadesPanel.jsx
+
+📂 auth/
+Todo lo relacionado a login o manejo de usuarios.
+
+Ej: LoginForm.jsx, ProtectedRoute.jsx
+
+📂 client/
+Vista personalizada para cada cliente.
+
+Ej: VistaClienteLayout.jsx, IframeBlock.jsx
+
+📂 shared/
+Componentes comunes para todo el sitio.
+
+Ej: Navbar.jsx, Footer.jsx, Loader.jsx, CardNovedad.jsx
+
+📁 hooks/
+Hooks personalizados que encapsulan lógica reutilizable.
+
+Ej: useAuth.js, useIsotope.js, useFetch.js
+
+📁 pages/
+Cada vista o pantalla completa del sitio (las que se renderizan por rutas).
+
+Ej: Home.jsx, Login.jsx, VistaCliente.jsx, AdminPanel.jsx
+
+📄 router.jsx
+Configura las rutas de toda la app.
+
+Usa react-router-dom.
+
+También se puede usar para definir rutas protegidas según rol (Admin, Cliente).
+
+📄 App.jsx
+Componente raíz de la app.
+
+Se suele usar para envolver en <Router>, layouts globales, contexto de usuario, etc.
+
+📄 main.jsx
+Punto de entrada del proyecto.
+
+Monta App.jsx en el DOM real (document.getElementById('root')).
+
+📝 Buenas prácticas para mantenerla ordenada
+Tipo de archivo	Ubicación recomendada
+Vistas completas (rutas)	pages/
+Componentes reutilizables	components/shared/
+Formulario de login	components/auth/LoginForm.jsx
+Formulario de vista personalizada	components/admin/VistaClienteForm.jsx
+Hook personalizado para login	hooks/useAuth.js
+Lógica para filtrar cards	hooks/useIsotope.js
+Archivo de rutas	router.jsx
+
+
+
+------
+
+
+
+Memoria guardada actualizada
+Perfecto. Comenzaremos con la estructura base del panel de administrador. Vamos a organizarlo por módulos funcionales e implementar:
+
+✅ 1. Vistas necesarias
+Ubicadas en src/pages/
+
+AdminDashboard.jsx → Vista principal del admin.
+
+AdminUsuarios.jsx → Para crear y administrar usuarios clientes.
+
+AdminNovedades.jsx → Gestión de novedades.
+
+AdminPortafolio.jsx → Gestión de trabajos de portfolio.
+
+AdminVistasCliente.jsx → Gestión de vistas personalizadas para clientes.
+
+✅ 2. Componentes reutilizables
+Ubicados en src/components/admin/:
+
+SidebarAdmin.jsx → Menú lateral.
+
+NavbarAdmin.jsx → Encabezado superior.
+
+VistaClienteCard.jsx → Card reutilizable para mostrar cada vista personalizada.
+
+FormVistaCliente.jsx → Formulario de creación/edición de vistas.
+
+FormUsuarioCliente.jsx → Formulario para crear usuario cliente.
+
+✅ 3. Navegación protegida para admins
+Ya tenemos:
+
+jsx
+Copiar
+Editar
+<Route path="/admin" element={
+  <PrivateRoute roles={['Admin']}>
+    <AdminDashboard />
+  </PrivateRoute>
+} />
+Luego, rutas internas en el dashboard (usando layout + nested routes si querés escalar más).
+
+✅ 4. Llamados a servicios
+Cada vista usará servicios definidos en src/services/, ya creados:
+
+novedadesService.js
+
+portafolioService.js
+
+vistaClienteService.js
+
+userService.js

@@ -1,0 +1,40 @@
+.banner-novedades {
+  background-color: #090909; 
+  background-image: url('../../assets/image/home/bg-textura-dark.png'); /* opcional: textura suave */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px dashed white;
+  border-bottom: 1px dashed white;
+
+}
+
+.novedad-card-link {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.novedad-card-link:hover .novedad-card {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.novedad-card img {
+  max-height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .banner-novedades {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .novedad-card img {
+    max-height: 180px;
+  }
+}

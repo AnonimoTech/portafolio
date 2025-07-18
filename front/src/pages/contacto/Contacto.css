@@ -1,0 +1,18 @@
+.contact-form .form-control:focus {
+  border-color: #00e0d6;
+  box-shadow: 0 0 0 0.2rem rgba(0, 224, 214, 0.25);
+}
+
+.contact-form .form-floating > label {
+  color: #666;
+}
+
+.contact-form button {
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #00e0d6;
+  border-color: #00e0d6;
+  color: #fff;
+}

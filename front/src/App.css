@@ -1,0 +1,24 @@
+/* Asegurate de que html y body ocupen toda la altura */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  
+}
+
+/* Contenedor principal: columna vertical con flex */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+
+.sinPadding{
+  padding: 0 !important;
+}
+
+/* Esto permite que el contenido principal (Router) empuje el footer hacia abajo */
+main.flex-fill {
+  flex: 1;
+}

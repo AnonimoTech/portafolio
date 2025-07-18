@@ -1,0 +1,173 @@
+
+
+.contenedorServicios {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    border-bottom: 1px dashed white;
+}
+
+
+
+.servicio-slide {
+
+    width: 300px;
+    height: auto;
+}
+
+.servicio-slide::before {
+    display: none;
+}
+
+
+
+.card-servicios {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: none;
+}
+
+.servicio-header {
+    position: relative;
+    height: 120px;
+}
+
+.icono-bg {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    backdrop-filter: none;
+}
+
+.icono-bg i {
+    font-size: 4rem;
+}
+
+.servicio-body {
+    flex: 1;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.swiper-slide {
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+    background-image: none !important;
+    background-color: transparent !important;
+}
+
+
+
+/* Colores custom */
+.bg-azul {
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.85), rgba(0, 123, 255, 0.6));
+}
+
+.bg-cien {
+    background: linear-gradient(135deg, rgba(0, 222, 255, 0.85), rgba(0, 222, 255, 0.6));
+}
+
+.bg-verde {
+    background: linear-gradient(135deg, rgba(40, 167, 69, 0.85), rgba(40, 167, 69, 0.6));
+}
+
+.bg-hex {
+    background: linear-gradient(135deg, rgba(102, 16, 242, 0.85), rgba(102, 16, 242, 0.6));
+    /* púrpura */
+}
+
+.bg-marron {
+    background: linear-gradient(135deg, rgba(121, 85, 72, 0.85), rgba(121, 85, 72, 0.6));
+}
+
+.bg-naranja {
+    background: linear-gradient(135deg, rgba(255, 159, 64, 0.85), rgba(255, 159, 64, 0.6));
+}
+
+.bg-rojo {
+    background: linear-gradient(135deg, rgba(220, 53, 69, 0.85), rgba(220, 53, 69, 0.6));
+}
+
+.bg-rosa {
+    background: linear-gradient(135deg, rgba(255, 99, 132, 0.85), rgba(255, 99, 132, 0.6));
+}
+
+.bg-violeta {
+    background: linear-gradient(135deg, rgba(111, 66, 193, 0.85), rgba(111, 66, 193, 0.6));
+}
+
+
+.custom-prev-abs,
+.custom-next-abs {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #fff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.custom-prev-abs {
+    left: 20px;
+}
+
+.custom-next-abs {
+    right: 20px;
+}
+
+.custom-prev-abs:hover,
+.custom-next-abs:hover {
+    background-color: var(--color-verde-t2);
+}
+
+.servicios-wrapper {
+    width: 100%;
+    overflow: visible;
+    position: relative;
+
+
+}
+
+.bulletsServicios {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.bulletsServicios .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+.bulletsServicios .swiper-pagination-bullet-active {
+    background-color: var(--color-verde-t2);
+    transform: scale(1.3);
+}

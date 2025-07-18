@@ -1,0 +1,44 @@
+.aliado-estrategico {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  padding: 5rem 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.aliado-estrategico::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.192);
+  z-index: 1;
+}
+
+.aliado-estrategico .container {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.aliado-estrategico h2 {
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+}
+
+.aliado-logo {
+  transition: transform 0.3s ease;
+}
+.aliado-logo:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .aliado-estrategico h2 {
+    font-size: 2rem;
+  }
+}

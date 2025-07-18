@@ -1,0 +1,138 @@
+:root {
+  /* Branding Colors */
+  --color-primary: #007E97;
+  /* Azul principal */
+  --color-secondary: #FAEA1E;
+  /* Amarillo secundario */
+  --color-background: #ffffff;
+  /* Fondo general */
+  --color-terciario: #3B62A7;
+  --color-cuarto: #D0121E;
+
+  /* colores brnading  */
+  --color-azul:#005EA8;
+  --color-azul-t1:#5389C2;
+  --color-azul-t2:#8BAED8;
+  --color-azul-t3:#B5CBE7;
+  --color-azul-t4:#D4E1F2;
+  --color-cian:#008183;
+  --color-cian-t1:#5EA9AA;
+  --color-cian-t2:#8DBFBB;
+  --color-cian-t3:#B8D7D5;
+  --color-cian-t4:#D6EBE5;
+  --color-verde:#008C34;
+  --color-verde-t1:#76B274;
+  --color-verde-t2:#9EC694;
+  --color-verde-t3:#C2DABA;
+  --color-verde-t4:#DCECD7;
+  --color-hex:#9DB300;
+  --color-hex-t1:#BFCC64;
+  --color-hex-t2:#D3DC94;
+  --color-hex-t3:#E4ECBF;
+  --color-hex-t4:#EDF3D9;
+  --color-marron:#805A41;
+  --color-marron-t1:#A68A63;
+  --color-marron-t2:#CAB29C;
+  --color-marron-t3:#DBCABC;
+  --color-marron-t4:#E9DFD5;
+  --color-naranja:#F6A800;
+  --color-naranja-t1:#FABE50;
+  --color-naranja-t2:#FDD790;
+  --color-naranja-t3:#FEE3B7;
+  --color-naranja-t4:#FFEED4;
+  --color-rojo:#E32119;
+  --color-rojo-t1:#EC764C;
+  --color-rojo-t2:#F4A47D;
+  --color-rojo-t3:#F8C5A9;
+  --color-rojo-t4:#FCDDCB;
+  --color-rosa:#E30066;
+  --color-rosa-t1:#EB6E93;
+  --color-rosa-t2:#F19EB5;
+  --color-rosa-t3:#F6C2CE;
+  --color-rosa-t4:#FADBE1;
+  --color-violeta:#93117E;
+  --color-violeta-t1:#B365A1;
+  --color-violeta-t2:#C593BE;
+  --color-violeta-t3:#D9B9D6;
+  --color-violeta-t4:#E7D5E7;
+
+
+  --color-text: #333333;
+  /* Texto normal */
+  --color-text-light: #666666;
+  /* Texto claro */
+  --color-error: #E32119;
+  /* Errores */
+  --color-success: #43a047;
+  /* Éxitos */
+
+  /* Typography */
+  --font-family-base:'Museo Sans Rounded', sans-serif;
+  --font-size-base: 1rem;
+  /* 16px (base) */
+  --font-size-small: 0.875rem;
+  /* 14px */
+  --font-size-large: 1.25rem;
+  /* 20px */
+
+  /* Spacings */
+  --spacing-small: 0.5rem;
+  /* 8px */
+  --spacing-medium: 1rem;
+  /* 16px */
+  --spacing-large: 2rem;
+  /* 32px */
+
+  /* Borders */
+  --border-radius-base: 0.5rem;
+  /* 8px */
+  --border-radius-small: 0.25rem;
+  /* 4px */
+
+  /* Other */
+  --transition-base: all 0.3s ease-in-out;
+}
+
+
+/* font  */
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  src: url('../assets/font/MuseoSansRounded100.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  src: url('../assets/font/MuseoSansRounded300.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  src: url('../assets/font/MuseoSansRounded500.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  src: url('../assets/font/MuseoSansRounded700.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  src: url('../assets/font/MuseoSansRounded900.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  src: url('../assets/font/MuseoSansRounded1000.otf') format('opentype');
+  font-weight: 1000;
+  font-style: normal;
+}
