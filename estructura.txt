@@ -37,7 +37,7 @@ Ej: LoginForm.jsx, ProtectedRoute.jsx
 
 📂 client/
 Vista personalizada para cada cliente.
-
+asas
 Ej: VistaClienteLayout.jsx, IframeBlock.jsx
 
 📂 shared/
